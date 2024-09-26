@@ -1,0 +1,17 @@
+{
+    "server": false,
+    "data_dir": "/tmp",
+    "retry_join": [
+        "consulserver01",
+        "consulserver02",
+        "consulserver03"
+    ],
+    "service": {
+        "id": "nginx2",
+        "name": "nginx",
+        "tags": [
+            "web"
+        ],
+        "port": 80
+    }
+}
